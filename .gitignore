@@ -1,0 +1,7 @@
+*
+!README.rst
+!LICENSE
+!.gitignore
+!exgac/
+!exgac/*
+!pyproject.toml
