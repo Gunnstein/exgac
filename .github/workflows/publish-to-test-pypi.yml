@@ -6,6 +6,11 @@ jobs:
     build-n-publish:
       name: Build and publish to TestPyPI
       runs-on: ubuntu-latest
+      environment:
+        name: testpypi
+        url: https://test.pypi.org/project/exgac/
+      permissions:
+        id-token: write
       steps:
       - uses: actions/checkout@v3
       - name: Set up Python for building and publishing
@@ -28,5 +33,6 @@ jobs:
       - name: Publish distribution to Test PyPI
         uses: pypa/gh-actions-pypi-publish@release/v1
         with:
+            verbose: true
             password: ${{ secrets.TEST_PYPI_API_TOKEN }}
-            repository-url: https://test.pypi.org/simple/
+            repository-url: https://test.pypi.org/legacy/
