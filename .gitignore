@@ -5,3 +5,7 @@
 !exgac/
 !exgac/*
 !pyproject.toml
+!.github/
+!.github/*
+!.github/workflows/
+!.github/workflows/*

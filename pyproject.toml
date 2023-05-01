@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "exgac"
 description = "Explore github actions for python packages"
-readme = "README.rst"
+readme = "README.md"
 license = {file = "LICENSE"}
 authors = [
     {name = "Gunnstein T. Frøseth", email = "gunnstein@mailbox.org"},
@@ -25,4 +25,4 @@ repository = "https://github.com/gunnstein/exgac"
 packages = ["exgac"]
 
 [tool.setuptools.dynamic]
-version = {attr = "fatpack.__version__"}
+version = {attr = "exgac.__version__"}
